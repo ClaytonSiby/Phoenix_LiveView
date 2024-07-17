@@ -18,6 +18,8 @@ defmodule LiveviewBasicsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/liveview", PageController, :index
+    get "/liveview/:messenger", PageController, :show
   end
 
   # Other scopes may use custom stacks.
